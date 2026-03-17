@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Noir Music</string>
+    <string name="made_by">Made by ARJUN A NAIR</string>
+    <string name="loading">Loading your music...</string>
+    <string name="no_songs_found">No songs found</string>
+    <string name="grant_permission">Grant Storage Permission</string>
+    <string name="permission_required">Storage permission is required to access your music files</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="all_songs">All Songs</string>
+    <string name="playlists">Playlists</string>
+    <string name="favorites">Favorites</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="sleep_timer">Sleep Timer</string>
+    <string name="repeat_mode">Repeat</string>
+    <string name="shuffle_mode">Shuffle</string>
+    <string name="create_playlist">Create Playlist</string>
+    <string name="playlist_name">Playlist Name</string>
+    <string name="add_to_playlist">Add to Playlist</string>
+    <string name="remove_from_playlist">Remove from Playlist</string>
+    <string name="timer_off">Timer Off</string>
+    <string name="timer_15min">15 Minutes</string>
+    <string name="timer_30min">30 Minutes</string>
+    <string name="timer_1hour">1 Hour</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Circular background -->
+    <path
+        android:fillColor="@color/colorGold"
+        android:pathData="M100,20 A80,80 0 1,1 100,180 A80,80 0 1,1 100,20 Z"/>
+
+    <!-- Music note -->
+    <path
+        android:fillColor="@color/backgroundColor"
+        android:pathData="M120,60 L120,115 C120,123 113,130 105,130 C97,130 90,123 90,115 C90,107 97,100 105,100 C107,100 109,100.5 111,101 L111,70 L140,65 L140,100 C140,108 133,115 125,115 C117,115 110,108 110,100 C110,92 117,85 125,85 C127,85 129,85.5 131,86 L131,60 Z"/>
+
+    <!-- Premium accent line -->
+    <path
+        android:strokeColor="@color/colorGoldDark"
+        android:strokeWidth="2"
+        android:pathData="M60,100 Q100,80 140,100"/>
+</vector>
