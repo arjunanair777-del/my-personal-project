@@ -7,6 +7,9 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -19,6 +22,9 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+        // Apply animations for premium feel
+        applyAnimations()
+
         // Delay and then check permissions
         Handler(Looper.getMainLooper()).postDelayed({
             if (hasStoragePermission()) {
@@ -27,6 +33,19 @@ class SplashActivity : AppCompatActivity() {
                 requestStoragePermission()
             }
         }, SPLASH_DELAY)
+    }
+
+    private fun applyAnimations() {
+        val logo = findViewById<ImageView>(R.id.logoImageView)
+        val appName = findViewById<TextView>(R.id.appNameTextView)
+        val madeBy = findViewById<TextView>(R.id.madeByTextView)
+
+        val fadeInScale = AnimationUtils.loadAnimation(this, R.anim.fade_in_scale)
+        val slideUpFadeIn = AnimationUtils.loadAnimation(this, R.anim.slide_up_fade_in)
+
+        logo.startAnimation(fadeInScale)
+        appName.startAnimation(slideUpFadeIn)
+        madeBy.startAnimation(slideUpFadeIn)
     }
 
     private fun hasStoragePermission(): Boolean {
